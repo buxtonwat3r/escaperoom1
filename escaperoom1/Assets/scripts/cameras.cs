@@ -5,17 +5,40 @@ using UnityEngine.UI;
 
 public class cameras : MonoBehaviour
 {
-    private Dictionary<string, KeyCode> keys = new Dictionary<string, KeyCode>();
-    public Text cam1, cam2;
-    void Start()
-    {
-        keys.Add("cam1", KeyCode.C);
-        keys.Add("cam2", KeyCode.V);
-    }
+    public GameObject cam1;
+    public GameObject camera2;
+    public GameObject camera3;
+    public GameObject camera4;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("1Key"))
+        {
+            cam1.SetActive(true);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+        }
+        if (Input.GetButtonDown("2Key"))
+        {
+            cam1.SetActive(false);
+            camera2.SetActive(true);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+        }
+        if (Input.GetButtonDown("3Key"))
+        {
+            cam1.SetActive(false);
+            camera2.SetActive(false);
+            camera3.SetActive(true);
+            camera4.SetActive(false);
+        }
+        if (Input.GetButtonDown("4Key"))
+        {
+            cam1.SetActive(false);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(true);
+        }
     }
-}
+} 

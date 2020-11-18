@@ -9,6 +9,20 @@ public class cameras : MonoBehaviour
     public GameObject camera2;
     public GameObject camera3;
     public GameObject camera4;
+    public GameObject camera5;
+
+
+    private void Start()
+    {
+        cam1.SetActive(true);
+        camera2.SetActive(false);
+        camera3.SetActive(false);
+        camera4.SetActive(false);
+        camera5.SetActive(false);
+    }
+
+
+
 
     void Update()
     {
@@ -18,6 +32,8 @@ public class cameras : MonoBehaviour
             camera2.SetActive(false);
             camera3.SetActive(false);
             camera4.SetActive(false);
+            camera5.SetActive(false);
+
         }
         if (Input.GetButtonDown("2Key"))
         {
@@ -25,6 +41,7 @@ public class cameras : MonoBehaviour
             camera2.SetActive(true);
             camera3.SetActive(false);
             camera4.SetActive(false);
+            camera5.SetActive(false);
         }
         if (Input.GetButtonDown("3Key"))
         {
@@ -32,6 +49,7 @@ public class cameras : MonoBehaviour
             camera2.SetActive(false);
             camera3.SetActive(true);
             camera4.SetActive(false);
+            camera5.SetActive(false);
         }
         if (Input.GetButtonDown("4Key"))
         {
@@ -39,6 +57,15 @@ public class cameras : MonoBehaviour
             camera2.SetActive(false);
             camera3.SetActive(false);
             camera4.SetActive(true);
+            camera5.SetActive(false);
+        }
+        if (Input.GetButtonDown("5Key"))
+        {
+            cam1.SetActive(false);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+            camera5.SetActive(true);
         }
     }
 } 

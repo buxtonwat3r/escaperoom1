@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 5f;
-    public float gravity = -0.2f;
+    public float gravity = -1f;
 
     Vector3 velocity;
     void Update()

@@ -6,12 +6,15 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float speed = 5f;
-    public float gravity = -1f;
+    public float speed = 12f;
+    public float gravity = -9.81f;
 
     Vector3 velocity;
+    
     void Update()
     {
+        
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -22,5 +25,7 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity);
+        
+       // controller.
     }
 }

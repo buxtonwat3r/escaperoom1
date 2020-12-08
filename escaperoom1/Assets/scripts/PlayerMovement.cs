@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject camera3;
     public GameObject camera4;
     public GameObject camera5;
+    public GameObject camera6;
 
     Vector3 velocity;
 
@@ -42,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
             camera3.SetActive(false);
             camera4.SetActive(true);
             camera5.SetActive(false);
+            camera6.SetActive(false);
         }
     }
 
@@ -54,6 +54,39 @@ public class PlayerMovement : MonoBehaviour
             camera3.SetActive(false);
             camera4.SetActive(false);
             camera5.SetActive(false);
+            camera6.SetActive(false);
         }
     }
-}    
+}
+   /* void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "games")
+        {
+            cam1.SetActive(false);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+            camera5.SetActive(false);
+            camera6.SetActive(true);
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "games")
+        {
+            cam1.SetActive(true);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+            camera5.SetActive(false);
+            camera6.SetActive(false);
+        }
+    }
+}
+*/
+
+
+
+
+
+

@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/escaperoom1.unity
     guid: c5719cf18a08fd645a4382b86b539caf
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Options.unity
     guid: d01354c0549a8a94e82db40624518469
+  - enabled: 1
+    path: Assets/Scenes/finish.unity
+    guid: 4a0bee46b323bb54fb1a2f4b189b2079
   m_configObjects: {}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class keypad: MonoBehaviour
+/*public class keypad: MonoBehaviour
 {
     public string curPassword = "12345";
     public string input;
@@ -99,4 +99,4 @@ public class keypad: MonoBehaviour
         }
     }
 }
- 
+ */

@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject camera4;
     public GameObject camera5;
     public GameObject camera6;
+    public GameObject camera7;
+    public GameObject camera8;
 
     Vector3 velocity;
 
@@ -42,24 +44,9 @@ public class PlayerMovement : MonoBehaviour
             camera4.SetActive(true);
             camera5.SetActive(false);
             camera6.SetActive(false);
+            camera7.SetActive(false);
+            camera8.SetActive(false);
         }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "RoomCamera")
-        {
-            cam1.SetActive(true);
-            camera2.SetActive(false);
-            camera3.SetActive(false);
-            camera4.SetActive(false);
-            camera5.SetActive(false);
-            camera6.SetActive(false);
-        }
-    }
-}
-   /* void OnTriggerEnter(Collider other)
-    {
         if (other.gameObject.tag == "games")
         {
             cam1.SetActive(false);
@@ -68,8 +55,33 @@ public class PlayerMovement : MonoBehaviour
             camera4.SetActive(false);
             camera5.SetActive(false);
             camera6.SetActive(true);
+            camera7.SetActive(false);
+            camera8.SetActive(false);
+        }
+        if (other.gameObject.tag == "airgame")
+        {
+            cam1.SetActive(false);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+            camera5.SetActive(false);
+            camera6.SetActive(false);
+            camera7.SetActive(true);
+            camera8.SetActive(false);
+        }
+        if (other.gameObject.tag == "pingpong")
+        {
+            cam1.SetActive(false);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+            camera5.SetActive(false);
+            camera6.SetActive(false);
+            camera7.SetActive(false);
+            camera8.SetActive(true);
         }
     }
+
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "games")
@@ -80,10 +92,49 @@ public class PlayerMovement : MonoBehaviour
             camera4.SetActive(false);
             camera5.SetActive(false);
             camera6.SetActive(false);
+            camera7.SetActive(false);
+            camera8.SetActive(false);
         }
+        if (other.gameObject.tag == "RoomCamera")
+        {
+            cam1.SetActive(true);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+            camera5.SetActive(false);
+            camera6.SetActive(false);
+            camera7.SetActive(false);
+            camera8.SetActive(false);
+        }
+        if (other.gameObject.tag == "airgame")
+        {
+            cam1.SetActive(true);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+            camera5.SetActive(false);
+            camera6.SetActive(false);
+            camera7.SetActive(false);
+            camera8.SetActive(false);
+        }
+        if (other.gameObject.tag == "pingpong")
+        {
+            cam1.SetActive(true);
+            camera2.SetActive(false);
+            camera3.SetActive(false);
+            camera4.SetActive(false);
+            camera5.SetActive(false);
+            camera6.SetActive(false);
+            camera7.SetActive(false);
+            camera8.SetActive(false);
+        }
+
     }
 }
-*/
+
+
+
+
 
 
 
